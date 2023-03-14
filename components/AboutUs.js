@@ -26,7 +26,7 @@ export const AboutUs = () => {
       </div>
       <a href="https://javascript30.com/" target="_blank">
         <img
-          src="/public/img/reto.png"
+          src="./img/reto.png"
           width="280"
           height="150"
           alt="JavaScript 30 Days"
