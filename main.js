@@ -1,5 +1,5 @@
-import './styles/style.scss';
-import './styles/main.scss';
+import '/styles/style.scss';
+import '/styles/main.scss';
 
 /* Imprt Components */
 import {Header} from './components/Header';

@@ -14,7 +14,7 @@ export const Challenges = () => {
                 <li class="card__item">${feature}</li>
               `).join('')}
             </ul>
-            <a href="/${challenge.link}" class="btn btn__goto" rel="noopener noreferrer">View Challenge</a>
+            <a href="/${challenge.link}/" class="btn btn__goto" rel="noopener noreferrer">View Challenge</a>
           </div>
         `).join('')}
       </article>
