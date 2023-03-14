@@ -1,5 +1,3 @@
-// vite.config.js
-
 export default {
   build: {
     outDir: 'docs',
@@ -18,13 +16,13 @@ export default {
       {
         // Especificar la ruta relativa a la carpeta raíz del proyecto
         // para la carpeta "fonts"
-        from: 'fonts/**/*',
+        from: 'public/fonts/**/*',
         to: './assets/public/fonts/'
       },
       {
         // Especificar la ruta relativa a la carpeta "src"
         // para la carpeta "img"
-        from: 'src/img/**/*',
+        from: 'public/src/img/**/*',
         to: './assets/public/img/'
       },
       {
