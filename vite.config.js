@@ -1,4 +1,8 @@
-export default {
+// vite.config.js
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+
+export default defineConfig ({
   build: {
     outDir: 'docs',
     emptyOutDir: true,
@@ -9,7 +13,7 @@ export default {
     force: true,
     rollupOptions: {
       input: {
-        main: './index.html'
+        main: resolve(__dirname, 'index.html'),
       }
     },
     copy: [
@@ -32,4 +36,4 @@ export default {
       }
     ]
   }
-};
+});
