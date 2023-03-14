@@ -84,16 +84,34 @@
   flex-direction: column;
   justify-content: center;
   background-color: $white;
-  padding: 2em 1em;
+  padding: 2em;
   box-shadow: $box_shadown;
   border-radius: 1em;
-  
+  transition: .6s ease-in-out;
   &__title {
     font-size: 1.5em;
     margin: 0px auto 1.5em auto;
     color: $color-secondary;
     font-weight: 800;
     text-align: center;
+    &--chagellenge{
+      margin-bottom: .8em;
+    }
+  }
+  &__subtitle{
+    font-size: .9em;
+    margin: 0px auto .7em auto;
+    color: rgba($color: $color-secondary, $alpha: .7);
+    font-weight: 800;
+    text-align: center;
+  }
+  &__featured{
+    margin: .5em auto;
+    list-style: circle;
+  }
+  &__item {
+    padding: .5em 0 .5em 1em;
+    font-size: .85em;
   }
   &__data {
     color: $color-accent;
@@ -112,6 +130,12 @@
     margin: 0 5px;
     svg {
       fill: $color-primary;
+    }
+  }
+  &--challenge {
+    &:hover {
+      box-shadow: $box_shadown_bold;
+      transform: translateY(-5px);
     }
   }
 }

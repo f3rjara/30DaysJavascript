@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://vitejs.dev/logo.svg" alt="Vite logo">
+    <img width="140" style="margin-right: 35px;" src="https://vitejs.dev/logo.svg" alt="Vite logo">
   </a>
 
   <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="Javascript logo">
+    <img width="140" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="Javascript logo">
   </a>
 </p>
 
@@ -29,17 +29,17 @@ This is a private project with the name "30daysjavascript". The project is built
 
 ## 📦 Dependencies:
 
-**eslint**: ^8.36.0
-**sass**: ^1.59.2
-**vite**: ^4.1.0
-**prettier**: ^2.8.4
+- **eslint**: ^8.36.0
+- **sass**: ^1.59.2
+- **vite**: ^4.1.0
+- **prettier**: ^2.8.4
 
 ## 📜 Scripts:
 
-**"dev"**: runs the development server using Vite
-**"build"**: builds the project using Vite
-**"preview"**: runs the built project locally
-**"lint"**: runs eslint with the extensions .ts and .tsx
+- **"dev"**: runs the development server using Vite
+- **"build"**: builds the project using Vite
+- **"preview"**: runs the built project locally
+- **"lint"**: runs eslint with the extensions .ts and .tsx
 
 ## 👨‍💻 Actions:
 
