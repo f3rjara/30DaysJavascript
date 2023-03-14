@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --outDir=docs --minify=true",
+    "build": "vite build --outDir=docs --minify=true --base=https://f3rjara.github.io/30DaysJavascript/",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.tsx"
   },
