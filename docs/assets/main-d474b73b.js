@@ -52,7 +52,7 @@
                 <li class="card__item">${a}</li>
               `).join("")}
             </ul>
-            <a href="/${l.link}/" class="btn btn__goto" rel="noopener noreferrer">View Challenge</a>
+            <a href="./${l.link}/" class="btn btn__goto" rel="noopener noreferrer">View Challenge</a>
           </div>
         `).join("")}
       </article>
