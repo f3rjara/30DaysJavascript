@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: "Againtsregular";
+  src: url("fonts/againts-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+$font-title: 'Againtsregular', sans-serif;
+$font-body: 'Farro', sans-serif;
+
+/* Colors */
+$bg-color: #f1f1f1;
+$color-primary: #ffdc3f;
+$color-secondary: #1b1b1b;
+$color-accent: #003658;
+
+$black: #000;
+$white: #fff;
+
+$box_shadown: 5px 5px 5px rgba($color: $black, $alpha: .2);
+$box_shadown_bold: 0px 0px 20px rgba($color: $black, $alpha: .8);
