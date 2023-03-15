@@ -14,26 +14,19 @@ export default defineConfig ({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        'challenges/1/app': resolve(__dirname, './challenges/1/app.js'),
+        'challenges/1/index': resolve(__dirname, './challenges/1/index.html'),
       }
     },
     copy: [
       {
-        // Especificar la ruta relativa a la carpeta raíz del proyecto
-        // para la carpeta "fonts"
-        from: 'public/fonts/**/*',
-        to: './assets/public/fonts/'
-      },
-      {
-        // Especificar la ruta relativa a la carpeta "src"
-        // para la carpeta "img"
-        from: 'public/src/img/**/*',
-        to: './assets/public/img/'
-      },
-      {
-        // Copiar toda la carpeta "public" (si es que la carpeta "fonts" e "img" están dentro)
         from: 'public/**/*',
         to: './assets/public/'
-      }
+      },
+      {
+        from: 'challenge/**/*',
+        to: './assets/challenge/'
+      },
     ]
   }
 });
