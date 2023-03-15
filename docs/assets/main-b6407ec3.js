@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill-3cfb730f.js";/* empty css              */const t=()=>`
+import"./modulepreload-polyfill-3cfb730f.js";const t=()=>`
     <section class="header">
       <h1 class="header__title">
         <span class="header__title--data">#</span>
