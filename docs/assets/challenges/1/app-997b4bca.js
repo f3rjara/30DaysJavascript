@@ -1,6 +1,4 @@
-import './styles.scss';
-
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML=`
   <div>
     <h1>Hello Vite!</h1>
     <div class="card">
@@ -11,4 +9,3 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `;
-
