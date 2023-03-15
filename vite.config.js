@@ -20,6 +20,10 @@ export default defineConfig ({
     },
     copy: [
       {
+        from: 'public/sounds/**/*',
+        to: './assets/public/sounds/'
+      },
+      {
         from: 'public/**/*',
         to: './assets/public/'
       },
