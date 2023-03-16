@@ -1,13 +1,14 @@
 // vite.config.js
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+const ASSET_URL = process.env.ASSET_URL || '';
 
 export default defineConfig ({
   build: {
     outDir: 'docs',
     emptyOutDir: true,
     minify: true,
-    base: 'https://f3rjara.github.io/30DaysJavascript/',
+    base: `${ASSET_URL}`,
     assetsDir: 'assets',
     assetsInlineLimit: 0,
     force: true,
