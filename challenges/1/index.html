@@ -7,13 +7,38 @@
     <title>Challenge 1 | 30 Days Javascript</title>
   </head>
   <body>
-    <main>
-      <img src="/img/reto.png" alt="" width="200px" />
-      <hr />
+    <main class="main">
+      
+      <section class="navigation container">
+        <a href="/" class="navigation__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+          Volver
+        </a>
+      </section>
+
+      <section class="keys container">
+        <template id="template-key">
+          <div data-key="" class="key">
+            <kbd></kbd>
+            <span class="sound"></span>
+          </div>
+        </template>
+
+        <audio data-key="65" src="/sounds/clap.wav" preload="auto"></audio>
+        <audio data-key="83" src="/sounds/hihat.wav" preload="auto"></audio>
+        <audio data-key="68" src="/sounds/kick.wav" preload="auto"></audio>
+        <audio data-key="70" src="/sounds/openhat.wav" preload="auto"></audio>
+        <audio data-key="71" src="/sounds/boom.wav" preload="auto"></audio>
+        <audio data-key="72" src="/sounds/ride.wav" preload="auto"></audio>
+        <audio data-key="74" src="/sounds/snare.wav" preload="auto"></audio>
+        <audio data-key="75" src="/sounds/tom.wav" preload="auto"></audio>
+        <audio data-key="76" src="/sounds/tink.wav" preload="auto"></audio>
+        
+      </section>
       <!-- sound html-->
-      <audio controls id="sound" src="/sounds/crash.wav" preload="auto">
+      <!-- <audio controls id="sound" src="/sounds/crash.wav" preload="auto">
         Your browser does not support the <code>audio</code> element
-      </audio>
+      </audio> -->
     </main>
     <script type="module" src="app.js"></script>
   </body>
