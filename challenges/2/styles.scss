@@ -1,0 +1,83 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.challenge{
+  padding: 2em;
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  &__title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: $color-secondary;
+    margin: 2em auto;
+  }
+
+  &__content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  background-image: url('https://us.123rf.com/450wm/nutnai/nutnai1905/nutnai190500001/126017610-plantilla-de-esfera-de-reloj-imprimible-vac%C3%ADa-aislada-sobre-fondo-blanco.jpg?ver=6');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 145%;
+  position: relative;
+  border-radius: 50%;
+  border: 5px solid black;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  &::before{
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-35%) translateY(-39%);
+    background-color: black;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    border-radius: 50%;
+    z-index: 99;
+  }
+  &__hand{
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    top: 50px;
+    left: 50%;
+    background-color: black;
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+    transition: all 1s;
+    z-index: 0;
+    clip-path: polygon(50% 0, 50% 0, 100% 25%, 75% 100%, 25% 100%, 0 25%);
+    &--minute{
+      width: 6px;
+      height: 130px;
+      top: 20px;
+      left: calc(50% + 1px);
+      background-color: rgb(45, 45, 45);
+      z-index: 10;
+      transform: rotate(0deg);
+    }
+    &--second{
+      width: 2px;
+      height: 145px;
+      top: 5px;
+      left: calc(50% + 3px);
+      background-color: red;
+      z-index: 20;
+      transform: rotate(0deg);
+    }
+  }
+}
