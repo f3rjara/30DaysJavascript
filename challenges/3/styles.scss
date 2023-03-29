@@ -1,0 +1,43 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+//--blur-img 0px
+//--base-img #ffc600
+//--spacing-img 0px
+:root {
+  --blur-img: 0px;
+  --base-img: #ffc600;
+  --spacing-img: 0px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 30px;
+}
+
+.control {
+  &__input {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 10px auto;
+  }
+  &__label {
+    display: block;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.image_result {
+  padding: var(--spacing-img);
+  background: var(--base-img);
+  filter: blur(var(--blur-img));
+}
