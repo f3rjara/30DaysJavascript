@@ -3,26 +3,7 @@
 @import './../../styles/normalize';
 @import './../../styles/global';
 
-.challenge{
-  padding: 2em;
-  display: grid;
-  grid-template-rows: auto 1fr;
 
-  &__title {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 700;
-    color: $color-secondary;
-    margin: 2em auto;
-  }
-
-  &__content {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
-}
 
 .clock {
   width: 300px;
