@@ -1,0 +1,1 @@
+const t=document.querySelectorAll(".control input");function n(){const e=this.dataset.sizing||"";document.documentElement.style.setProperty(`--${this.name}`,this.value+e)}t.forEach(e=>e.addEventListener("change",n));t.forEach(e=>e.addEventListener("mousemove",n));
