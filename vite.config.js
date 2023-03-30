@@ -21,6 +21,8 @@ export default defineConfig ({
         'challenges/2/index': resolve(__dirname, './challenges/2/index.html'),
         'challenges/3/app': resolve(__dirname, './challenges/3/app.js'),
         'challenges/3/index': resolve(__dirname, './challenges/3/index.html'),
+        'challenges/4/app': resolve(__dirname, './challenges/4/app.js'),
+        'challenges/4/index': resolve(__dirname, './challenges/4/index.html'),
       }
     },
     copy: [
