@@ -1,0 +1,28 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+
+.gallery {
+  position: relative;
+  display: flex;
+  height: 430px;
+  overflow: hidden;
+  background: black;
+  &__image {
+    width: 0;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease-in-out;
+    filter: blur(.2);
+    &:hover {
+      cursor: pointer;
+      width: 200px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+  }
+}
