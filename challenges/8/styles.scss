@@ -1,0 +1,48 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.challenge__content {
+  position: relative;
+  display: flex;
+}
+.canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 768px;
+  &__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: aliceblue;
+    border: 2px solid gray;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 99;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    min-width: max-content;
+    background: #000000;
+    color: rgb(210, 210, 210);
+    font-size: .7em;
+    font-weight: 800;
+    cursor: pointer;
+    padding: .5em;
+    transition: .5s ease-in-out;
+    &:hover {
+      background: #333333;
+      transform: translateY(-3px);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
