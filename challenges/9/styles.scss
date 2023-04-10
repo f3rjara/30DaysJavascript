@@ -1,0 +1,35 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.subtitle {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+.consoleBox {
+  background-color: #1E1E1E;
+  color: #D4D4D4;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  padding: 1em;
+  white-space: pre-wrap;
+  max-height: 500px;
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.keyword {
+  color: #569CD6;
+}
+
+.number {
+  color: #B5CEA8;
+}
+
+
+.clcik-me {
+  color: #569CD6;
+  cursor: pointer;
+}
