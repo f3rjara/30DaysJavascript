@@ -1,0 +1,1 @@
+const n=document.querySelectorAll('.inbox input[type="checkbox"]');let i;n.forEach(e=>e.addEventListener("click",s));function s(e){let t=!1;e.shiftKey&&this.checked&&n.forEach(c=>{(c===this||c===i)&&(t=!t),t&&(c.checked=!0)}),i=this}
