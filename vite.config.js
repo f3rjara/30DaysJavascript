@@ -35,12 +35,18 @@ export default defineConfig ({
         'challenges/9/index': resolve(__dirname, './challenges/9/index.html'),
         'challenges/10/app': resolve(__dirname, './challenges/10/app.js'),
         'challenges/10/index': resolve(__dirname, './challenges/10/index.html'),
+        'challenges/11/app': resolve(__dirname, './challenges/11/app.js'),
+        'challenges/11/index': resolve(__dirname, './challenges/11/index.html'),
       }
     },
     copy: [
       {
         from: 'public/sounds/**/*',
         to: './assets/public/sounds/'
+      },
+      {
+        from: 'public/videos/**/*',
+        to: './assets/public/videos/'
       },
       {
         from: 'public/**/*',
