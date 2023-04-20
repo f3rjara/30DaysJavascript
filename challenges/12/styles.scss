@@ -1,0 +1,24 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+// generate .btn class for buttton very happy and happiness
+.btn{
+  background-color: purple;
+  border: 1px solid rgb(214, 41, 214);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: darken(black, 10%);
+    border-color: darken(white, 10%);
+  }
+}

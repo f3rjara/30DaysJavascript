@@ -3,6 +3,13 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 const ASSET_URL = process.env.ASSET_URL || '';
 
+const challenges = {};
+challenges['main'] = resolve(__dirname, 'index.html');
+for (let i = 1; i <= 12; i++) {
+  challenges[`challenges/${i}/app`] = resolve(__dirname, `./challenges/${i}/app.js`);
+  challenges[`challenges/${i}/index`] = resolve(__dirname, `./challenges/${i}/index.html`);
+}
+
 export default defineConfig ({
   build: {
     outDir: 'docs',
@@ -13,31 +20,7 @@ export default defineConfig ({
     assetsInlineLimit: 0,
     force: true,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        'challenges/1/app': resolve(__dirname, './challenges/1/app.js'),
-        'challenges/1/index': resolve(__dirname, './challenges/1/index.html'),
-        'challenges/2/app': resolve(__dirname, './challenges/2/app.js'),
-        'challenges/2/index': resolve(__dirname, './challenges/2/index.html'),
-        'challenges/3/app': resolve(__dirname, './challenges/3/app.js'),
-        'challenges/3/index': resolve(__dirname, './challenges/3/index.html'),
-        'challenges/4/app': resolve(__dirname, './challenges/4/app.js'),
-        'challenges/4/index': resolve(__dirname, './challenges/4/index.html'),
-        'challenges/5/app': resolve(__dirname, './challenges/5/app.js'),
-        'challenges/5/index': resolve(__dirname, './challenges/5/index.html'),
-        'challenges/6/app': resolve(__dirname, './challenges/6/app.js'),
-        'challenges/6/index': resolve(__dirname, './challenges/6/index.html'),
-        'challenges/7/app': resolve(__dirname, './challenges/7/app.js'),
-        'challenges/7/index': resolve(__dirname, './challenges/7/index.html'),
-        'challenges/8/app': resolve(__dirname, './challenges/8/app.js'),
-        'challenges/8/index': resolve(__dirname, './challenges/8/index.html'),
-        'challenges/9/app': resolve(__dirname, './challenges/9/app.js'),
-        'challenges/9/index': resolve(__dirname, './challenges/9/index.html'),
-        'challenges/10/app': resolve(__dirname, './challenges/10/app.js'),
-        'challenges/10/index': resolve(__dirname, './challenges/10/index.html'),
-        'challenges/11/app': resolve(__dirname, './challenges/11/app.js'),
-        'challenges/11/index': resolve(__dirname, './challenges/11/index.html'),
-      }
+      input: challenges
     },
     copy: [
       {

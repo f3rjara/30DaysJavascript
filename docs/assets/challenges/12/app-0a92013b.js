@@ -1,0 +1,1 @@
+const e=[],n="konami",t=document.querySelector(".btn__happy");setTimeout(()=>{console.log("You are so happy!"),cornify_add()},1e3);window.addEventListener("keyUp",o=>{e.push(o.key),e.splice(-n.length-1,e.length-n.length),e.join("").includes(n)&&cornify_add()});t.addEventListener("click",cornify_add());
