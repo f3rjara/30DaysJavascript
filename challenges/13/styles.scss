@@ -1,0 +1,55 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.challenge__content {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 3em;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.image{
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.align-left { 
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.align-right {
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+.align-center {
+  display: block;
+  margin: 20px auto;
+}
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.align-center.slide-in {
+  transform: translateY(40%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) translateY(0%) scale(1);
+}
