@@ -1,0 +1,119 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+
+.tasks{
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+
+.list {
+  max-height: 400px;
+  overflow-y: auto;
+  &__item{
+    border-bottom: 1px solid rgb(215, 215, 215);
+    &:hover {
+      background: rgb(245, 245, 245);
+    }
+  }
+  // style for bar scrolll
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgb(245, 245, 245);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgb(19, 19, 19);
+  }
+}
+
+.item {
+  display: flex;
+  &__checked {
+    display: none;
+  }
+  &__label {
+    font-size: .9em;
+    font-weight: 500;
+    user-select: none;
+    display: block;
+    width: 100%;
+    padding: .8em 0;
+    cursor: pointer;
+    &.no-task {
+      color: rgb(158, 158, 158);
+      cursor: auto;
+      text-align: center;
+    }
+
+    &:before {
+      content: "⬜️";
+      margin-right: 10px;
+    }
+
+    &.task__check{
+      text-decoration: line-through;
+      color: rgb(158, 158, 158);
+      &::before {
+        content: "👍";
+      }
+    }
+    
+  }
+}
+
+.form {
+  display: flex;
+  &__input {
+    flex: 1;
+    padding: .5em;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgb(215, 215, 215);
+    font-size: .9em;
+    font-weight: 500;
+    &:focus {
+      outline: none;
+      border: 1px solid rgb(0, 0, 0);
+    }
+  }
+  &__submit {
+    padding: .5em 1em;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    font-size: .9em;
+    font-weight: 500;
+    background: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background: rgb(23, 111, 92);
+    }
+  }
+}
+
+.help-text {
+  font-size: .9em;
+  font-weight: 500;
+  color: rgb(158, 158, 158);
+  margin-top: .5em;
+  text-align: center;
+}
+
+.text-danger {
+  color: rgba(255, 0, 0, 0.635);
+  font-weight: 500;
+}
