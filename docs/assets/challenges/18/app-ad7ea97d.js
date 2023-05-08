@@ -1,0 +1,1 @@
+const a=Array.from(document.querySelectorAll("[data-time]")),l=document.querySelector(".total_time"),r=a.map(e=>e.dataset.time).map(e=>{const[o,c]=e.split(":").map(parseFloat);return o*60+c}).reduce((e,o)=>e+o);let t=r;const s=Math.floor(t/3600);t=t%3600;const n=Math.floor(t/60);t=t%60;console.log(s,n,t);l.innerHTML=`Total time: ${s}:${n}:${t}`;
