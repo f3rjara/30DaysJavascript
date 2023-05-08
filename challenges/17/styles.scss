@@ -1,0 +1,20 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+
+.list_bands {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+
+  & > .item {
+    width: 100%;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+    background: ghostwhite;
+    margin: 1em;
+  }
+}

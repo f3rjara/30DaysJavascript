@@ -1,0 +1,26 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.total_time {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+.videos {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  & > li {
+    width: 100%;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+    background: ghostwhite;
+    margin: 1em;
+  }
+}
