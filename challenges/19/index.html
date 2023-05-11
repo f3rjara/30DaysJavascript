@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Challenge 19 | 30 Days Javascript</title>
+  </head>
+  <body>
+    <main class="main">
+      
+      <section class="navigation container">
+        <a href="https://f3rjara.github.io/30DaysJavascript/" class="navigation__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+          Volver
+        </a>
+      </section>
+
+      <section class="container challenge">
+        <h1 class="challenge__title"> Challenge 19 : Unreal Webcam Fun </h1>
+
+        <article class="challenge__content content">
+          <a class="btn btn_take">Take photo</a>
+          <div class="content__buttons">
+            <div class="left rgb">
+              <label for="rmin">Red min</label>
+              <input type="range" name="rmin" min="0" max="255" value="101" data-sizing="px">
+  
+              <label for="gmin">Green min</label>
+              <input type="range" name="gmin" min="0" max="255" value="140" data-sizing="px">
+  
+              <label for="bmin">Blue min</label>
+              <input type="range" name="bmin" min="0" max="255" value="66" data-sizing="px">  
+            </div>
+            <div class="rigth rgb">
+              <label for="rmax">Red max</label>
+              <input type="range" name="rmax" min="0" max="255" value="168" data-sizing="px">
+  
+              <label for="gmax">Green max</label>
+              <input type="range" name="gmax" min="0" max="255" value="255" data-sizing="px">
+  
+              <label for="bmax">Blue max</label>
+              <input type="range" name="bmax" min="0" max="255" value="132" data-sizing="px">
+            </div>
+          </div>
+
+          <div class="content__buttons">
+            <a class="btn btn_filter active" data-filter="normal">Normal</a>
+            <a class="btn btn_filter" data-filter="red">Filter Red</a>
+            <a class="btn btn_filter" data-filter="green">Filter Green</a>
+            <a class="btn btn_filter" data-filter="ghost">Filter Ghost</a>
+          </div>
+
+          <div class="content__video">
+            <canvas class="photo"></canvas>
+            <video class="player"></video>
+            <div class="strip"></div>
+          </div>
+          
+        </article>
+
+        <audio class="snap" src="/sounds/snap.mp3" hidden></audio>
+
+      </section>
+
+      
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
