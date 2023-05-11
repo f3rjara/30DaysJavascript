@@ -102,8 +102,6 @@ const greenScreen = (pixels) => {
     let blue = pixels.data[i + 2]; // BLUE
     let alpha = pixels.data[i + 3]; // ALPHA
 
-    /* console.log(green, levels.gmin, levels.gmax);
-    debugger; */
     if (
           red >= levels.rmin
       &&  red <= levels.rmax
