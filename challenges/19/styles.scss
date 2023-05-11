@@ -1,0 +1,96 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.challenge__content {
+  align-items: initial;
+  justify-content: initial;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 1em;
+  margin: 1em auto 1em auto;
+  border-radius: 0.5em;
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  line-height: 120%;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+}
+.content__buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  max-width: 45%;
+  margin: 10px auto 30px auto;
+}
+
+.rigth, .left {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  gap: 10px;
+  /* input range */
+  input {
+    cursor: pointer;
+  }
+}
+
+.content__video {
+  position: relative;
+  width: 100%;
+  border: 1px solid red;
+}
+
+
+.photo {
+  width: 100%;
+  float: left;
+}
+
+.player {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width:200px;
+}
+
+.strip {
+  padding: 2rem;
+}
+
+.strip img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2rem 0.5rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background: white;
+  margin: 0.5em 1em 0.5em 0;
+}
+
+.btn_filter {
+  position: relative;
+  overflow: hidden;
+  &.active {
+    transition: .2s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 80%;
+      left: -25%;
+      width: 150%;
+      height: 150%;
+      background-color: rgba(0, 0, 0, .9);
+    }
+  }
+}
