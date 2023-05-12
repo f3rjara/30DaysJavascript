@@ -68,3 +68,23 @@ html, body {
   }
 
 }
+
+
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 1em;
+  margin: 1em auto 1em auto;
+  border-radius: 0.5em;
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  line-height: 120%;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+}
