@@ -5,7 +5,7 @@ const ASSET_URL = process.env.ASSET_URL || '';
 
 const challenges = {};
 challenges['main'] = resolve(__dirname, 'index.html');
-for (let i = 1; i <= 19; i++) {
+for (let i = 1; i <= 20; i++) {
   challenges[`challenges/${i}/app`] = resolve(__dirname, `./challenges/${i}/app.js`);
   challenges[`challenges/${i}/index`] = resolve(__dirname, `./challenges/${i}/index.html`);
 }
