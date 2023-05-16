@@ -1,0 +1,74 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+
+.challenge__content {
+  
+  .wrapper {
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 20px;
+    line-height: 2;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    background: rgba(0,0,0,0.05);
+    border-radius: 20px;
+    &:hover {
+      background: rgba(107, 3, 3, 0.555);
+    }
+  }
+
+  .highlight {
+    transition: all 0.2s;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 0;
+    background: white;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .menu {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
+  }
+
+  .menu a {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 20px;
+    color: black;
+  }
+}
+
+.navbar {
+  position: relative;
+  margin:100px 0;
+
+  .sub-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: red;
+    padding: 1em;
+    max-width: 400px;
+    transform: translateY(100%) translateX(50%);
+    z-index: 10;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
