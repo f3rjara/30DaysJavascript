@@ -1,0 +1,1 @@
+const e=document.querySelector(".arrow"),t=document.querySelector(".speed-value");navigator.geolocation.watchPosition(o=>{t.textContent=o.coords.speed,e.style.transform=`rotate(${o.coords.heading}deg)`},o=>{console.log(o),alert("Hey! You gotta allow that to happen!")});
