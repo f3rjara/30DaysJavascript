@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Challenge 23 | 30 Days Javascript</title>
+  </head>
+  <body>
+    <main class="main">
+      
+      <section class="navigation container">
+        <a href="https://f3rjara.github.io/30DaysJavascript/" class="navigation__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+          Volver
+        </a>
+      </section>
+
+      <section class="container challenge">
+        <h1 class="challenge__title"> Challenge 23 : Speech Synthesis</h1>
+
+        <article class="challenge__content">
+          <div class="voiceinator">
+
+            <h2 class="title_voice">The Voiceinator 5000</h2>
+      
+            <select name="voice" id="voices">
+              <option value="">Select A Voice</option>
+            </select>
+      
+            <label for="rate">Rate:</label>
+            <input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+      
+            <label for="pitch">Pitch:</label>
+      
+            <input name="pitch" type="range" min="0" max="2" step="0.1">
+            <textarea name="text">Hello! I love JavaScript 👍</textarea>
+            <button id="stop">Stop!</button>
+            <button id="speak">Speak</button>
+      
+          </div>
+        </article>
+
+      </section>
+
+      
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
