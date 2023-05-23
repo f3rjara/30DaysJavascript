@@ -1,0 +1,107 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+.challenge__content {
+  display: initial;
+}
+
+.site-wrap {
+  background: white;
+  padding: 4em;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s;
+  transform: 0.98;
+  p {
+    margin: 1em 0;
+  }
+}
+
+.header {
+  text-align: center;
+  min-height: 50vh;
+  background: url(https://source.unsplash.com/GKN6rpDr0EI/960x640) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    color: white;
+    font-size: 4vw;
+    margin: 2em;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  }
+}
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+
+
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid yellow;
+  }
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background-color: black;
+  transition: all .5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+li.logo a {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  
+}
+
+.image {
+  border-radius: 10px;
+}
+
+nav.scroll_nav_top {
+  position: sticky;
+  li.logo {
+    background-color: yellow;
+    max-width: 500px;
+  }
+}
+
+body.scroll_nav_top {
+  .site-wrap {
+    transform: scale(1);
+  }
+}
