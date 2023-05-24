@@ -1,0 +1,41 @@
+
+// Import the variables from the main file
+@import './../../styles/normalize';
+@import './../../styles/global';
+
+
+.box {
+  padding: 1.5em;
+  color: black;
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+  &:hover {
+    transform: translateX(15%);
+  }
+  
+  &__one {
+    background-color: bisque;
+    &:hover {
+      transform: translateX(0);
+    }
+  }
+  &__two {
+    background-color: aqua;
+  }
+  &__three {
+    background-color: coral;
+  }
+
+  h2 {
+    margin: .5em 0;
+    padding: 20px;
+    font-style: italic;
+    background-color: black;
+    color: white;
+    width: min-content;
+  }
+}
