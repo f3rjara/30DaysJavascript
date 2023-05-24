@@ -1,0 +1,1 @@
+const o=document.querySelector(".nav__main"),s=o.offsetTop,t=()=>{window.scrollY>=s?(document.body.classList.add("scroll_nav_top"),o.classList.add("scroll_nav_top"),document.body.style.paddingTop=o.offsetHeight+"px"):(o.classList.remove("scroll_nav_top"),document.body.classList.remove("scroll_nav_top"))};window.addEventListener("scroll",t);
