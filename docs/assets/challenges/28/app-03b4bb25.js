@@ -1,0 +1,1 @@
+const a=document.querySelector(".speed"),d=document.querySelector(".speed-bar"),r=document.querySelector(".label"),l=document.querySelector(".video");function i(n){const e=(n.pageY-this.offsetTop)/this.offsetHeight,s=0,t=5,c=Math.round(e*100)+"%",o=e*(s-t)+t;d.style.height=c,r.innerHTML=o.toFixed(2)+"x",l.playbackRate=o}a.addEventListener("mousemove",i);
