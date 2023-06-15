@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Challenge 29 | 30 Days Javascript</title>
+  </head>
+  <body>
+    <main class="main">
+      
+      <section class="navigation container">
+        <a href="https://f3rjara.github.io/30DaysJavascript/" class="navigation__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+          Volver
+        </a>
+      </section>
+
+      <section class="container challenge">
+        <h1 class="challenge__title"> Challenge 29 : Countdown Timer </h1>
+
+        <article class="challenge__content">
+          <header class="header">
+            <ul class="nav">
+              <li class="nav__item"><a data-timer="20" class="nav__link">20 Sec</a></li>
+              <li class="nav__item"><a data-timer="300" class="nav__link">Quick 5</a></li>
+              <li class="nav__item"><a data-timer="1200" class="nav__link">Snack 20</a></li>
+              <li class="nav__item"><a data-timer="2700" class="nav__link">Work 45</a></li>
+              <li class="nav__item"><a data-timer="3600" class="nav__link">Lunch Break</a></li>
+              <li class="nav__item">
+                <form name="formMinutes" id="formMinutes" autocomplete="off">
+                  <input class="nav__input" type="text" name="minutes"  placeholder="Enter Minutes">
+                </form>
+              </li>
+            </ul>
+          </header>
+          <div class="display">
+            <h1 class="display__time">0:00</h1>
+            <p class="display__end">Be back at 0:00</p>
+          </div>
+        </article>
+
+      </section>
+
+      
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
